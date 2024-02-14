@@ -22,7 +22,6 @@ git clone https://github.com/quentinformatique/EasyGit.git
 Install the dependencies:
 
 ```bash
-
 cd EasyGit
 npm install
 ```
