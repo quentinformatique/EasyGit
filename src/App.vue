@@ -1,16 +1,17 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from "./components/HelloWorld.vue";
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <!-- <HelloWorld msg="Welcome to Your Vue.js + Vite App" /> -->
-
-
+  <font-awesome-icon icon="trash" />
 </template>
 
-<style lang="scss" scoped>
 
+<style lang="scss" scoped>
+template > font-awesome-icon {
+  color: red;
+  font-size: 30px;
+}
 </style>
