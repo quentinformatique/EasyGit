@@ -1,8 +1,8 @@
 {
-  "name": "vite-vue3-electron-ts-template",
+  "name": "easygit",
   "private": true,
   "version": "0.0.1",
-  "author": "Your Name",
+  "author": "quentinformatique",
   "main": "dist/electron/main/main.js",
   "scripts": {
     "vite:dev": "vite",
@@ -16,7 +16,7 @@
     "app:preview": "npm run vite:build && tsc && electron ."
   },
   "build": {
-    "appId": "YourAppID",
+    "appId": "EasyGit",
     "asar": true,
     "directories": {
       "buildResources": "assets",
@@ -50,6 +50,7 @@
     }
   },
   "dependencies": {
+    "sass": "^1.70.0",
     "vue": "^3.2.25"
   },
   "devDependencies": {
