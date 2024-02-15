@@ -1,6 +1,6 @@
 # EasyGit
 
-EasyGit is a Git client built with Electron.js, Vite, Vue.js, and TypeScript. It provides a graphical user interface to interact with Git, making the management of your Git repositories easier and more intuitive.
+**EasyGit** is a *Git client* built with **Electron.js**, **Vite**, **Vue.js**, and **TypeScript*. It provides a graphical user interface to interact with Git, making the management of your Git repositories easier and more intuitive.
 
 ## Technologies Used
 ![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript)
