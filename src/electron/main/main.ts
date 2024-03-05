@@ -6,7 +6,7 @@ import {
     dialog
 } from 'electron';
 
-const isDev = process.env.npm_lifecycle_event === "app:dev" ? true : false;
+const isDev = process.env.npm_lifecycle_event === "app:dev";
 
 async function handleFileOpen() {
     const { canceled, filePaths } = await dialog.showOpenDialog({ title: "Open File" })
@@ -18,8 +18,8 @@ async function handleFileOpen() {
 function createWindow() {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
-        width: 800,
-        height: 600,
+        minHeight: 800,
+        minWidth: 1200,
         webPreferences: {
             preload: join(__dirname, '../preload/preload.js'),
         },
