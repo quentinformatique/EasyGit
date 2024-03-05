@@ -1,17 +1,19 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import Header  from "./components/Header.vue";
 </script>
 
 <template>
+  <Header />
   <font-awesome-icon icon="trash" />
 </template>
 
 
 <style lang="scss" scoped>
-template > font-awesome-icon {
-  color: red;
-  font-size: 30px;
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
