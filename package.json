@@ -1,0 +1,30 @@
+{
+  "name": "easygit",
+  "version": "1.0",
+  "description": "An electron based git client",
+  "main": "build/main/main.js",
+  "scripts": {
+    "dev": "node scripts/dev-server.js",
+    "build": "node scripts/build.js && electron-builder",
+    "build:win": "node scripts/build.js && electron-builder --win",
+    "build:mac": "node scripts/build.js && electron-builder --mac",
+    "build:linux": "node scripts/build.js && electron-builder --linux"
+  },
+  "repository": "https://github.com/quentinformatique/EasyGit.git",
+  "author": {
+    "name": "quentinformatique",
+    "url": "https://github.com/quentinformatique"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.1",
+    "chalk": "^4.1.2",
+    "chokidar": "^3.5.3",
+    "electron": "^27.1.0",
+    "electron-builder": "^24.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  },
+  "dependencies": {
+    "vue": "^3.3.8"
+  }
+}
