@@ -16,8 +16,10 @@
 .container {
   width: 320px;
   height: 800px;
+
   background-color: #2C303A;
   color: white;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;

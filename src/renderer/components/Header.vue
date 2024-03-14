@@ -18,8 +18,8 @@ defineProps({
     </div>
     <div class="right">
       <div class="scan">
-        <h3>Scan new repositories</h3>
         <font-awesome-icon icon="search"/>
+        <h3>Scan new repositories</h3>
       </div>
       <div class="branch">
         branch
@@ -53,10 +53,6 @@ defineProps({
       background-color: #373C49;
       color: white;
       border: none;
-      border-radius: 5px;
-      margin: 5px;
-      padding: 10px;
-      width: 100%;
       font-size: 15px;
       font-weight: bold;
 
@@ -76,8 +72,7 @@ defineProps({
   .right {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
-    width: 100%;
+    width: 658px;
 
     .scan {
       display: flex;
@@ -93,7 +88,6 @@ defineProps({
       }
 
       font-awesome-icon {
-        margin-left: 10px;
         font-size: 20px;
       }
     }
@@ -109,7 +103,6 @@ defineProps({
 
       &:hover {
         transform: scale(1.02);
-
       }
     }
   }
