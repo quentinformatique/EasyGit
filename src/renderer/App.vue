@@ -32,11 +32,15 @@ window.electronAPI.sendMessage('Hello from App.vue!');
 <style lang="scss" scoped>
 .app-container {
   display: flex;
+  width: 100vw;
+  height: 100vh;
+
   background-color: white;
 
   .left-section {
     display: flex;
     flex-direction: column;
+
     .content-section {
       display: flex;
       flex: 1;
@@ -47,10 +51,9 @@ window.electronAPI.sendMessage('Hello from App.vue!');
     }
 
     .main-section {
+
+
       .main-content {
-        flex: 1;
-        width: 550px;
-        height: 100%;
         background-color: #282C34;
       }
     }
@@ -58,6 +61,8 @@ window.electronAPI.sendMessage('Hello from App.vue!');
 
   .right-section {
     display: flex;
+    width: 320px;
+    flex: none;
   }
 }
 </style>
