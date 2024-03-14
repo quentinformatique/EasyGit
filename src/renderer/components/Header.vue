@@ -8,24 +8,110 @@ defineProps({
 </script>
 
 <template>
-  <div class="header">
-    <div class="item">GAUCHE</div>
-    <div class="item">{{ currentRepo }}</div>
-    <div class="item">DROITE</div>
+  <div class="container">
+    <div class="left">
+      <select name="repo" id="repo">
+        <option value="repo1">MyProjectRepository</option>
+        <option value="repo2">Repo2</option>
+        <option value="repo3">Repo3</option>
+      </select>
+    </div>
+    <div class="right">
+      <div class="scan">
+        <h3>Scan new repositories</h3>
+        <font-awesome-icon icon="search"/>
+      </div>
+      <div class="branch">
+        branch
+      </div>
+    </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
-.header {
+.container {
+  height: 80px;
+
   display: flex;
   justify-content: space-between;
-  width: 100vw;
-  background-color: #282c34;
-  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
-  height: 50px;
-  .item {
-    color: white;
+
+  background-color: #2C303A;
+  border-bottom: 1px solid #232323;
+
+
+  .left {
+    width: 222px;
+    background-color: #373C49;
+    border-right: 1px solid #232323;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    select {
+      background-color: #373C49;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+      padding: 10px;
+      width: 100%;
+      font-size: 15px;
+      font-weight: bold;
+
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+
+    .scan {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      font-awesome-icon {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+    }
+
+    .branch {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.02);
+
+      }
+    }
   }
 }
 </style>
