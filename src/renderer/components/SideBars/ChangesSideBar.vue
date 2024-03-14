@@ -15,17 +15,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 20vw;
-  background-color: #282c34;
-  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
-  height: 100vh;
+  width: 230px;
+  background-color: #3F4551;
+  height: 100%;
 
   .item {
     color: white;
   }
 
   button {
-    background-color: #99E1D9;
+    background-color: #282c34;
     color: #282c34;
     border: none;
     padding: 10px 20px;
