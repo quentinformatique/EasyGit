@@ -17,6 +17,7 @@
   justify-content: space-between;
   width: 230px;
   background-color: #3F4551;
+  border-right: 1px solid #232323;
   height: 100%;
 
   .item {
