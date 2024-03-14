@@ -51,9 +51,11 @@ window.electronAPI.sendMessage('Hello from App.vue!');
     }
 
     .main-section {
-
-
+      display: flex;
+      flex: 1;
       .main-content {
+        display: flex;
+        flex: 1;
         background-color: #282C34;
       }
     }
