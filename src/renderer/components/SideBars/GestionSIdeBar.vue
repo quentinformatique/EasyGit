@@ -21,6 +21,7 @@
   width: 100px;
   height: 100%;
   background-color: #2C303A;
+  border-right: 1px solid #232323;
 
   display: flex;
   flex-direction: column;
