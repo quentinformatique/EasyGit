@@ -47,6 +47,7 @@ defineProps({
 
   background-color: #2C303A;
   border-bottom: 1px solid #232323;
+  box-sizing: border-box;
 
 
   .left {
@@ -69,10 +70,6 @@ defineProps({
       margin: 10px;
       cursor: pointer;
       transition: 0.3s;
-
-      &:hover {
-        transform: scale(1.02);
-      }
 
       &:focus {
         outline: none;
