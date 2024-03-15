@@ -18,6 +18,7 @@
   width: 230px;
   background-color: #3F4551;
   border-right: 1px solid #232323;
+  box-sizing: border-box;
   height: 100%;
 
   .item {
@@ -32,6 +33,7 @@
     width: 100px;
     cursor: pointer;
     transition: 0.3s;
+    background-color: #7ED8D3;
 
     &:hover {
       transform: scale(1.1);
