@@ -1,5 +1,9 @@
 <script setup lang="ts">
 
+import Commit from "../buttons/Commit.vue";
+import Textarea from "../inputs/Textarea.vue";
+import Text from "../inputs/Text.vue";
+
 defineProps({
   nbFilesChanged: {
     type: Number,
@@ -23,14 +27,12 @@ defineProps({
     </div>
     <div class="bot">
       <div class="commit-title">
-        <input type="text" name="name" id="name" placeholder="commit title...">
+        <Text name="title" id="title" placeholder="commit title..."/>
       </div>
       <div class="commit-desc">
-        <textarea name="desc" id="desc" placeholder="description..."></textarea>
+        <Textarea name="desc" id="desc" placeholder="description..." rows="4"/>
       </div>
-      <div class="commit-submit">
-        <button>Commit</button>
-      </div>
+      <Commit text="Commit"/>
     </div>
   </div>
 </template>
@@ -65,6 +67,7 @@ defineProps({
       align-items: center;
       justify-content: center;
       width: 100%;
+      font-weight: 500;
     }
 
     .nb-file-changed {
@@ -97,65 +100,15 @@ defineProps({
       display: flex;
       justify-content: center;
       align-items: center;
-
-      input {
-        border: none;
-        background-color: #2C303A;
-        height: 30px;
-        color: white;
-        width: 90%;
-        border-radius: 5px;
-
-        &:focus {
-          outline: none;
-        }
-      }
     }
 
     .commit-desc {
       width: 100%;
-      height: 40px;
+      height: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      textarea {
-        border: none;
-        background-color: #2C303A;
-        height: 40px;
-        color: white;
-        border-radius: 5px;
-        width: 90%;
-        resize: none;
-
-        &:focus {
-          outline: none;
-        }
-      }
-    }
-
-      .commit-submit {
-        width: 100%;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        button {
-          width: 90%;
-          height: 100%;
-          border: none;
-          background-color: #6BC0BC;
-          color: white;
-          cursor: pointer;
-          transition: 0.3s;
-          border-radius: 5px;
-
-          &:hover {
-            background-color: #5BA9A2;
-          }
-        }
-      }
     }
   }
+}
 </style>
