@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Header from "./components/Header.vue";
-import LeftSideBar from "./components/SideBars/ChangesSideBar.vue";
+import ChangesSideBar from "./components/SideBars/ChangesSideBar.vue";
 import CommitsSideBar from "./components/SideBars/CommitsSideBar.vue";
 import GestionSIdeBar from "./components/SideBars/GestionSIdeBar.vue";
 
@@ -14,7 +14,7 @@ window.electronAPI.sendMessage('Hello from App.vue!');
       <div class="content-section">
         <div class="sidebar-section">
           <GestionSIdeBar/>
-          <LeftSideBar/>
+          <ChangesSideBar nb-files-changed="300"/>
         </div>
         <div class="main-section">
           <div class="main-content">
@@ -53,6 +53,7 @@ window.electronAPI.sendMessage('Hello from App.vue!');
     .main-section {
       display: flex;
       flex: 1;
+
       .main-content {
         display: flex;
         flex: 1;
