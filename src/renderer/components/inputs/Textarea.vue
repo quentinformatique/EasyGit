@@ -20,6 +20,7 @@ textarea {
   border-radius: 5px;
   width: 90%;
   resize: none;
+  font-family: 'Roboto', sans-serif;
 
   &:focus {
     outline: none;
