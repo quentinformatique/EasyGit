@@ -3,6 +3,7 @@
 import Commit from "../buttons/Commit.vue";
 import Textarea from "../inputs/Textarea.vue";
 import Text from "../inputs/Text.vue";
+import FileChanged from "../FileChanged.vue";
 
 defineProps({
   nbFilesChanged: {
@@ -23,7 +24,11 @@ defineProps({
       </div>
     </div>
     <div class="mid">
-
+      <div class="file-changed">
+        <FileChanged name="index.php" type="new"/>
+        <FileChanged name="script.js" type="edit"/>
+        <FileChanged name=".htaccess" type="delete"/>
+      </div>
     </div>
     <div class="bot">
       <div class="commit-title">
@@ -61,7 +66,7 @@ defineProps({
     border-bottom: 1px solid #232323;
 
     .title {
-      font-size: 16px;
+      font-size: 15px;
       height: 100%;
       display: flex;
       align-items: center;
@@ -82,6 +87,13 @@ defineProps({
 
   .mid {
     height: 100%;
+    width: 100%;
+    .file-changed {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      padding: 15px;
+    }
   }
 
   .bot {
