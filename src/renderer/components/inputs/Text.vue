@@ -23,6 +23,8 @@ input {
   width: 90%;
   border-radius: 5px;
 
+  padding: 0 10px;
+
   &:focus {
     outline: none;
   }
