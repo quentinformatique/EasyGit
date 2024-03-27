@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Commit from "../History/Action.vue";
 
 </script>
 
@@ -8,7 +9,9 @@
       <h2>History</h2>
     </div>
     <div class="main">
-      commits
+      <Commit title="Bug fix: blablablabla..." type="commit" tag="47a3f02" date="2021-10-10" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ligula."/>
+      <Commit title="Merge dev/fct -> Main" type="merge" tag="47a3f02" date="2021-10-10" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ligula."/>
+      <Commit title="Create branch feature" type="branch" tag="47a3f02" date="2021-10-10" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ligula."/>
     </div>
   </div>
 
@@ -40,7 +43,6 @@
   .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     border-left: 1px solid #232323;
     flex: 1;
