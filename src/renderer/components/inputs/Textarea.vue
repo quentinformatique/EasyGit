@@ -18,9 +18,10 @@ textarea {
   background-color: #2C303A;
   color: white;
   border-radius: 5px;
-  width: 90%;
+  width: 82%;
   resize: none;
   font-family: 'Roboto', sans-serif;
+  padding: 5px 10px;
 
   &:focus {
     outline: none;
