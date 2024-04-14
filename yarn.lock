@@ -767,6 +767,11 @@ csstype@^3.1.3:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
 
+custom-electron-titlebar@^4.2.8:
+  version "4.2.8"
+  resolved "https://registry.npmjs.org/custom-electron-titlebar/-/custom-electron-titlebar-4.2.8.tgz"
+  integrity sha512-JEFiOKJdSZtMh90FO90FeEqCc463ZZhuh78JxILvO9Nc0H8I9MfKekgCf6jZH6xccd3/tm1OcYOoUJi3JbXR/w==
+
 debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.4, debug@4:
   version "4.3.4"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz"
@@ -898,7 +903,7 @@ electron-publish@24.13.1:
     lazy-val "^1.0.5"
     mime "^2.5.2"
 
-electron@^27.1.0:
+electron@^27.1.0, electron@>20.0.0:
   version "27.3.5"
   resolved "https://registry.npmjs.org/electron/-/electron-27.3.5.tgz"
   integrity sha512-w4HsKR85UboP7Pu4QnFyuEokQI/H2bYCC/ZZzLJxHq3tqX93O2GUgwu6jAk8YpxmW8Nl7FiHlwoquDXB3Wtoxw==
